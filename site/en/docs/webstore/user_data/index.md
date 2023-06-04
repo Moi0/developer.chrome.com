@@ -2,7 +2,7 @@
 layout: "layouts/doc-post.njk"
 title: "Updated Privacy Policy & Secure Handling Requirements"
 date: 2016-04-23
-updated: 2021-01-28
+updated: 2023-05-01
 description: Frequently asked questions about Chrome Web Store's user data policy.
 ---
 
@@ -96,7 +96,7 @@ Product (see our [I/O 2014 talk on HTTPS Everywhere][7]).
 
 Extensions must transmit "personal and sensitive user data" over a secure connection (e.g. HTTPS,
 WSS) and stored at rest using a strong encryption method such as RSA or AES. You should not use any
-cipher suite that is blacklisted by IETF. Our requirements may change over time.
+cipher suite that is denylisted by IETF. Our requirements may change over time.
 
 ## 9\. Does my Product's handling of personal or sensitive user data require a prominent disclosure and affirmative consent? {: #ques_9 }
 
@@ -317,8 +317,8 @@ limited exceptions to this rule:
 
 ### 1\. What is required from developers to publish/update a Chrome Web Store item?
 
-We have updated the privacy tab of the developer dashboard to allow developers to easily provide
-information about their data collection and data usage in a simple and standardized way.
+We have updated the Privacy practices tab of the developer dashboard to allow developers to easily
+provide information about their data collection and data usage in a simple and standardized way.
 
 Every item will need to provide these data collection disclosures and limited use certification in
 order to be updated or published.

@@ -1,17 +1,16 @@
 ---
 layout: "layouts/doc-post.njk"
 title: "Overriding Chrome pages"
+seoTitle: "Chrome Extensions: Overriding Chrome pages"
 date: 2012-09-18
-updated: 2015-05-11
+updated: 2023-02-06
 description: >
   How to override the Chrome bookmark manager, history, and new tab
   pages from your Chrome Extension.
 ---
 
-{% Partial 'extensions/mv2page-in-mv3.md' %}
-
 Override pages are a way to substitute an HTML file from your extension for a page that Google
-Chrome normally provides. In addition to HTML, an override page usually has CSS and JavaScript code.
+Chrome normally provides like New Tab page. In addition to HTML, an override page usually has CSS and JavaScript code.
 
 An extension can replace any one of the following pages:
 
@@ -28,8 +27,7 @@ An extension can replace any one of the following pages:
 
 Incognito windows are treated specially. New Tab pages cannot be overridden in incognito windows.
 Other override pages work in incognito windows as long as the [incognito][1] manifest property is
-set to "spanning" (which is the default value). See [Saving data and incognito mode][2] in the
-Overview for more details on how you should treat incognito windows.
+set to "spanning" (which is the default value). See [Saving data and incognito mode][2] in Protect User Privacy for more details on how you should treat incognito windows.
 
 The following screenshots show the default New Tab page and then a custom New Tab page.
 
@@ -45,6 +43,7 @@ Register an override page in the [extension manifest][3] like this:
 
 ```json/4-6
 {
+  "manifest_version": 3,
   "name": "My extension",
   ...
 
@@ -75,14 +74,13 @@ For an effective override page, follow these guidelines:
   The address bar always gets the focus first when the user creates a new tab.
 - **Don't try to emulate the default New Tab page.**
   The APIs necessary to create a slightly modified version of the default New Tab page—with top
-  pages, recently closed pages, tips, a theme background image, and so on—don't exist yet. Until
-  they do, you're better off trying to make something completely different.
+  pages, recently closed pages, tips, a theme background image, and so on—don't exist.
 
 ## Examples {: #examples }
 
 See the [override samples][4].
 
 [1]: /docs/extensions/mv3/manifest/incognito
-[2]: /docs/extensions/mv3/overview#incognito
-[3]: /docs/extensions/mv3/tabs
+[2]: /docs/extensions/mv3/user_privacy#data-incognito
+[3]: /docs/extensions/mv3/manifest/
 [4]: /docs/extensions/mv3/samples#search:chrome_url_overrides
