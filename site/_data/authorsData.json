@@ -902,6 +902,11 @@
     "github": "jarek-foksa",
     "image": "image/8WbTDNrhLsU0El80frMBGE4eMCD3/JjjLhgB6sR73QAeyKMdK.png"
   },
+  "nabeelalshamma": {
+    "image": "image/8WbTDNrhLsU0El80frMBGE4eMCD3/gZlM5s1kj09oCG5h2buz.jpeg",
+    "github": "alshamma",
+    "linkedin": "https://www.linkedin.com/in/alshamma/"
+  },
   "ajara": {
     "twitter": "tropicadri",
     "github": "tropicadri",
@@ -1795,10 +1800,22 @@
       }
     ]
   },
+  "nmichell": {
+    "country": "US",
+    "image": "image/RtQlPaM9wdhEJGVKR8boMPkWf443/H1htVMDirezFxAwJqA6W.jpeg",
+    "github": "nancymic2",
+    "linkedin": "nancymichell"
+  },
   "jakobdamjensen": {
     "image": "image/8WbTDNrhLsU0El80frMBGE4eMCD3/P4d5Q4zt2CBsLwKUHour.jpg",
     "twitter": "jdj_dk",
     "linkedin": "jakobdamjensen"
+  },
+  "thiagodiogo": {
+    "country": "US",
+    "image": "image/RtQlPaM9wdhEJGVKR8boMPkWf443/OQvBPjMM24CK46ItOoqe.jpeg",
+    "linkedin": "thiagodiogo",
+    "github": "thiagodiogo"
   },
   "oliverdunk": {
     "country": "UK",
@@ -1818,5 +1835,20 @@
   "alispivak": {
     "country": "US",
     "image": "image/BhuKGJaIeLNPW9ehns59NfwqKxF2/ywSi24f8TTFI21KkKs5V.jpg"
+  },
+  "henrikbostrom":{
+    "country": "",
+    "image": "image/kheDArv5csY6rvQUJDbWRscckLr1/es5lvrnCiRGsPLyndQ9s.jpeg"
+  },
+  "darojas": {
+    "country": "US",
+    "linkedin": "danielalejandrorojas",
+    "image": "image/RtQlPaM9wdhEJGVKR8boMPkWf443/DRQ6mX7gGOj9i6tc8f53.png"
+  },
+  "seburan": {
+    "country": "JP",
+    "image": "image/jxu1OdD7LKOGIDU7jURMpSH2lyK2/cXhmmC3yKNEVL68EHWdq.jpg",
+    "github": "Seburan",
+    "linkedin": "severinf"
   }
 }

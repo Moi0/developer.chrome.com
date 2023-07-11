@@ -3,7 +3,7 @@ layout: 'layouts/doc-post.njk'
 title: What's new in Chrome extensions
 description: 'Recent changes to the Chrome extensions platform, documentation, and policy'
 date: 2021-02-25
-updated: 2023-05-30
+updated: 2023-06-23
 tags:
   - extensions-news
 
@@ -14,6 +14,27 @@ tags:
 <!--lint disable first-heading-level-->
 
 Check this page often to learn about changes to Chrome extensions, extensions documentation, or related policy or other changes. You'll find other notices posted on the [Extensions Google Group](https://groups.google.com/a/chromium.org/g/chromium-extensions). The [Extensions News](/tags/extensions-news/) tag lists articles about some of the topics listed here. (It even has [an RSS feed](/feeds/extensions-news.xml).) The [Chrome schedule](https://chromiumdash.appspot.com/schedule) lists stable and beta release dates.
+
+### New guidance and sample: Learn how to use Google Analytics 4 in your Chrome extension {: #guide-ga }
+
+<p class="color-secondary-text type--caption">Posted on <time>June 23, 2023</time></p>
+
+We published new Google Analytics and geolocation guidance and samples:
+
+* An [updated version of our Google Analytics guidance](/docs/extensions/mv3/tut_analytics/) explaining how you can use [Google Analytics 4](https://support.google.com/analytics/answer/10089681) in your Chrome extension. We've also added a working [Google Analytics 4 sample](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/tutorial.google-analytics) to our Github sample repository. Check out [`google-analytics.js`](https://github.com/GoogleChrome/chrome-extensions-samples/blob/main/functional-samples/tutorial.google-analytics/scripts/google-analytics.js) for the relevant code related to Google Analytics.
+* A new [Geolocation guide](/docs/extensions/mv3/geolocation/) and [three samples](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples) demonstrating how to access geolocation in service workers, content scripts, popups and side panels.
+
+### Chrome 115: Specify multiple reasons in chrome.offscreen.createDocument() {: #m115-offscreen-multiple-reasons }
+
+<p class="color-secondary-text type--caption">Posted on <time>June 7, 2023</time></p>
+
+You can now specify multiple [`reason`](/docs/extensions/reference/offscreen/#type-Reason) enums when calling [`chrome.offscreen.createDocument()`](/docs/extensions/reference/offscreen/#method-createDocument). Use this when an offscreen document will be used for multiple different purposes. The browser uses the supplied reasons to determine the lifetime of the offscreen document. 
+
+### New tool: Extension Update Testing Tool {: #update-testing-tool }
+
+<p class="color-secondary-text type--caption">Posted on <time>June 5, 2023</time></p>
+
+We've just released the [Extension Update Testing Tool](https://github.com/GoogleChromeLabs/extension-update-testing-tool), a local extension update server that can be used for testing updates to Chrome Extensions during local development, including permission grants. The tool shows the user's update flow, including keeping an extension disabled until a user grants any newly requested permissions. This tool is particularly useful for simulating the permission changes requested when updating an extension from Manifest V2 to Manifest V3.
 
 ### Chrome 114: New Side Panel API {: #side-panel-launch }
 
