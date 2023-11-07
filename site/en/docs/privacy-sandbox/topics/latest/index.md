@@ -6,10 +6,13 @@ subhead: >
 description: >
  Updates and enhancements to the design and implementation of the API.
 date: 2023-01-24
+updated: 2023-09-18
 authors:
  - leeronisrael
  - joeytrotz
 ---
+
+{% Partial 'privacy-sandbox/ot-end.njk' %}
 
 {% Aside %}
 
@@ -21,6 +24,13 @@ For technical resources, see the developer guides:
 For a non-technical introduction, see the [Topics overview on privacysandbox.com](https://privacysandbox.com/intl/en_us/proposals/topics/).
 
 {% endAside %}
+
+## Shipping the Privacy Sandbox relevance and measurement APIs
+
+**August 9, 2023**
+
+We have begun the [ramp up for the Ads Measurement and Relevance APIs, and testers can expect to see traffic levels increase over the next few days](https://groups.google.com/a/chromium.org/g/topics-api-announce/c/6G8SVRWijy4/m/MndCUVf4AgAJ).
+For more information, see [Shipping the Privacy Sandbox relevance and measurement APIs](/blog/privacy-sandbox-launch/).
 
 ## New taxonomy and expanding support for headers
 

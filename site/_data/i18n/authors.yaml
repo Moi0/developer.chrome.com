@@ -427,7 +427,7 @@ agektmr:
   title:
     en: 'Eiji Kitamura'
   description:
-    en: 'Developer Advocate for identity, security, privacy and payment on the web.'
+    en: 'Developer Advocate, Google Chrome'
 titouan:
   title:
     en: 'Titouan Rigoudy'
@@ -542,9 +542,9 @@ bmeurer:
     en: 'Googler working on Chrome DevTools.'
 demianrenzulli:
   title:
-    en: 'Demian Renzulli'
+    en: 'Demián Renzulli'
   description:
-    en: 'Demián is a Web Ecosystems Consultant working at Google New York.'
+    en: 'Demián is a Partner Engineer working at Google New York.'
 samdutton:
   title:
     en: 'Sam Dutton'
@@ -692,7 +692,7 @@ rowan_m:
   title:
     en: 'Rowan Merewood'
   description:
-    en: 'Rowan is a Staff Developer Relations Engineer at Chrome.'
+    en: 'Developer Relations for Privacy Sandbox.'
 danielcheng:
   title:
     en: 'Daniel Cheng'
@@ -1486,6 +1486,11 @@ thiagodiogo:
     en: 'Thiago Diogo'
   description:
     en:  'Staff Technical Solutions Consultant'
+mikedougherty:
+  title:
+    en: 'Mike Dougherty'
+  description:
+    en: 'Chrome engineer on iOS'
 henrikbostrom:
   title:
     en: 'Henrik Boström'
@@ -1506,3 +1511,79 @@ yurikoh:
     en: 'Yuriko Hirota'
   description:
     en:  'Web Ecosystem Consultant'
+elabadysayed:
+  title:
+    en: 'Sayed El-Abady'
+  description:
+    en: 'Software Engineer, Google'
+hemeryar:
+  title:
+    en: 'Arthur Hemery'
+  description:
+    en: 'Software Engineer, Google'
+paulrossman:
+  title:
+    en: 'Paul Rossman'
+  description:
+    en: 'Paul is a Technical Program Manager at Google'
+nrosenthal:
+  title:
+    en: 'Noam Rosenthal'
+  description:
+    en: 'Software engineer at Google working on web performance.'
+samrichard:
+  title:
+    en: 'Sam Richard'
+  description:
+    en: 'Developer Advocate, Google ChromeOS'
+xuezhoudai:
+  title:
+    en: 'Xuezhou Dai'
+    zh: '戴学舟'
+  description:
+    en: 'Summer of Code ''23 Contributor'
+hadrijau:
+  title:
+    en: 'Hadrien Jaubert'
+  description:
+    en: 'Software Engineering Intern, Google Chrome DevTools'
+jlwagner:
+  title:
+    en: 'Jeremy Wagner'
+  description:
+    en: 'Tech writin'', doc slingin'' reprobate.'
+adamraine:
+  title:
+    en: 'Adam Raine'
+  description:
+    en: 'Software Engineer, Google'
+schottfk:
+  title:
+    en: 'Fred K Schott'
+  description:
+    en: 'Co-creator, Astro'
+phillipsm:
+  title:
+    en: 'Matthew Phillips'
+  description:
+    en: 'Co-creator, Astro'
+ferreiram:
+  title:
+    en: 'Maxi Ferreira'
+  description:
+    en: 'Creator, FrontendAtScale'
+iforfota7:
+  title:
+    en: 'Ioana Forfota'
+  description:
+    en: 'STEP Intern, Chrome DevTools team'
+silviaeremia7:
+  title:
+    en: 'Silvia Eremia'
+  description:
+    en: 'STEP Intern, Chrome DevTools team'
+saurabhrajpal:
+  title:
+    en: Saurabh Rajpal
+  description:
+    en: Web Ecosystem Consultant.

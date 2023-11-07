@@ -5,10 +5,12 @@ seoTitle: Welcome to Chrome Extensions
 subhead: 'Learn about developing extensions for Chrome.'
 description: 'Documentation for Chrome extensions developers.'
 date: 2020-11-09
-updated: 2023-02-21
+updated: 2023-10-18
 ---
 
-These pages contain guides and reference information for developers who want to
+Google Chrome Extensions are applications that run inside the Chrome browser and provide additional
+functionality, integration with third party websites or services, and customized browsing
+experiences. These pages contain guides and reference information for developers who want to
 create extensions for the Chrome browser.
 
 If you're not sure where to begin, have a look at the following starting pages:
@@ -41,7 +43,7 @@ Thank you for being a member of the extension developer community. We're glad yo
 [doc-mv2-sunset]: /docs/extensions/mv3/mv2-sunset
 [doc-whats-new]: /docs/extensions/whatsnew
 [doc-get-help]: /docs/extensions/gethelp
-[gh-ext-samples]: https://github.com/GoogleChrome/chrome-extensions-samples
+[gh-ext-samples]: /docs/extensions/samples/
 [github-ext-doc]: https://github.com/GoogleChrome/developer.chrome.com
 [gs-tuts]: /docs/extensions/mv3/getstarted/#tutorial
 [migrate-to-mv3]: /docs/extensions/migrating/

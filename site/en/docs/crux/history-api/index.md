@@ -22,7 +22,7 @@ date: 2023-02-07
 
 # Optional
 # Include an updated date when you update your post
-updated: 2023-05-10
+updated: 2023-08-03
 
 # Optional
 # How to add a new author
@@ -270,7 +270,6 @@ If the `metrics` property is not set then all available metrics will be returned
 - `first_input_delay`
 - `interaction_to_next_paint`
 - `largest_contentful_paint`
-- `experimental_interaction_to_next_paint`
 - `experimental_time_to_first_byte`
 
 {% Aside 'important' %}
@@ -315,7 +314,7 @@ The URL uses [gRPC Transcoding](https://google.aip.dev/127) syntax.
 
 ### Request body
 
-As the CrUX History API uses the same request bodies, you can reference [the daily CrUX API request body documentation](../api/#request-body) for more details.
+The CrUX History API uses the same request bodies as [the daily CrUX API](/docs/crux/api/#request-body), with the exception of not supporting the `effectiveConnectionType` request field.
 
 For example, to request the desktop Largest Contentful Paint values for the web.dev homepage:
 

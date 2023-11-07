@@ -4,6 +4,54 @@ A list of everything that has been covered in the [What's New In DevTools](/tags
 
 {# $content #}
 
+### Chrome 119 {: #chrome119 }
+
+* [Improved @property section in Elements > Styles](/blog/new-in-devtools-119/#css)
+* [Editable @property rule](/blog/new-in-devtools-119/#edit-property)
+* [Issues with invalid @property rules are reported](/blog/new-in-devtools-119/#property-issues)
+* [Updated list of devices to emulate](/blog/new-in-devtools-119/#devices)
+* [Pretty-print inline JSON in script tags in Sources](/blog/new-in-devtools-119/#sources)
+* [Autocomplete private fields in Console](/blog/new-in-devtools-119/#autocomplete-console)
+* [Lighthouse 11.1.0](/blog/new-in-devtools-119/#lighthouse)
+* [Accessibility improvements](/blog/new-in-devtools-119/#accessibility)
+* [Web SQL deprecation](/blog/new-in-devtools-119/#web-sql)
+* [Screenshot aspect ratio validation in Application > Manifest](/blog/new-in-devtools-119/#manifest-aspect-ratio)
+* [Miscellaneous highlights](/blog/new-in-devtools-119/#misc)
+
+### Chrome 118 {: #chrome118 }
+
+* [New section for custom properties in Elements > Styles](/blog/new-in-devtools-118/#css)
+* [More local overrides improvements](/blog/new-in-devtools-118/#overrides)
+* [Enhanced search](/blog/new-in-devtools-118/#search)
+* [Improved Sources panel](/blog/new-in-devtools-118/#sources)
+* [Streamlined workspace in the Sources panel](/blog/new-in-devtools-118/#workspace)
+* [Reorder panes in Sources](/blog/new-in-devtools-118/#reorder-panes)
+* [Syntax highlighting and pretty-printing for more script types](/blog/new-in-devtools-118/#syntax)
+* [Emulate prefers-reduced-transparency media feature](/blog/new-in-devtools-118/#reduced-transparency)
+* [Lighthouse 11](/blog/new-in-devtools-118/#lighthouse)
+* [Accessibility improvements](/blog/new-in-devtools-118/#accessibility)
+* [Miscellaneous highlights](/blog/new-in-devtools-118/#misc)
+
+### Chrome 117 {: #chrome117 }
+
+* [Network panel improvements](/blog/new-in-devtools-117/#network)
+* [Override web content locally even faster](/blog/new-in-devtools-117/#overrides)
+* [Override the content of XHR and fetch requests](/blog/new-in-devtools-117/#xhr-fetch)
+* [Hide Chrome extension requests](/blog/new-in-devtools-117/#hide-extension-requests)
+* [Human-readable HTTP status codes](/blog/new-in-devtools-117/#status-codes)
+* [Pretty-print responses for JSON subtypes](/blog/new-in-devtools-117/#pretty-json-response)
+
+* [Performance: See the changes in fetch priority for network events](/blog/new-in-devtools-117/#performance)
+* [Sources settings enabled by default: Code folding and automatic file reveal](/blog/new-in-devtools-117/#sources)
+* [Improved debugging of third-party cookie issues](/blog/new-in-devtools-117/#third-party-cookies)
+* [New colors](/blog/new-in-devtools-117/#colors)
+* [Lighthouse 10.4.0](/blog/new-in-devtools-117/#lighthouse)
+* [Debug preloading in the Application panel](/blog/new-in-devtools-117/#preloading)
+* [The C/C++ WebAssembly debugging extension for DevTools is now open source](/blog/new-in-devtools-117/#debug-cpp)
+* [Miscellaneous highlights](/blog/new-in-devtools-117/#misc)
+* [(Experimental) New rendering emulation: prefers-reduced-transparency](/blog/new-in-devtools-117/#reduced-transparency)
+* [(Experimental) Enhanced Protocol monitor](/blog/new-in-devtools-117/#protocol-monitor)
+
 ### Chrome 116 {: #chrome116 }
 
 * [Improved debugging of missing stylesheets](/blog/new-in-devtools-116/#stylesheets)

@@ -75,7 +75,7 @@ CustomTabsIntent intentBuilder = new CustomTabsIntent.Builder()
 
 ## Add custom menu items
 
-Custom tabs has as many as five default actions provided by the browser: "Forward", "Page Info", "Refresh", "Find in Page" and "Open in Browser". Additionally, you can add up to five more, which will be inserted between the icon row and the browser-provided items. (See the image below.)
+A Custom Tab has as many as five default actions provided by the browser: "Forward", "Page Info", "Refresh", "Find in Page" and "Open in Browser". Additionally, you can add up to seven more. These menu items will be inserted between the icon row and the browser-provided items. (See the image below.) The actual number depends on the underlying browser implementation. (For example, with version 117 Chrome increased the number of menu items from five to seven.) So it is best to add the most important items first. 
 
 You can access your custom actions via the three dot menu in the top right corner:
 
@@ -190,6 +190,18 @@ int[] clickableIds = {R.id.ct_toolbar_next, R.id.ct_toolbar_previous};
 // Register the bottom toolbar when creating a new custom tab intent
 CustomTabsIntent intent = new CustomTabsIntent.Builder()
     .setSecondaryToolbarViews(secondaryToolbarViews, clickableIds, toolbarPendingIntent)
+    .build();
+```
+
+## Bookmarks and download buttons
+
+The bookmarks and download buttons in the three dot menu are enabled by default. To disable them, use the following
+code in `CustomTabsIntent.Builder`:
+
+```java
+CustomTabsIntent customTabsIntent = new CustomTabsIntent.Builder()
+    .setBookmarksButtonEnabled(false)
+    .setDownloadButtonEnabled(false)
     .build();
 ```
 

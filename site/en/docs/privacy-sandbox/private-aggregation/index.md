@@ -8,13 +8,15 @@ description: >
    Generate aggregate data reports using data from Protected Audience and cross-site
    data from Shared Storage.
 date: 2022-10-11
-updated: 2023-06-29
+updated: 2023-09-18
 authors:
    - kevinkiklee
 ---
 
+{% Partial 'privacy-sandbox/ot-end.njk' %}
+
 To provide critical features that the web relies on, the Private Aggregation
-API has been proposed for aggregating and reporting on cross-site data in a
+API has been built for aggregating and reporting on cross-site data in a
 privacy-preserving manner. 
 
 ## Implementation status
@@ -24,7 +26,7 @@ privacy-preserving manner.
 ## What is the Private Aggregation API
 
 The Private Aggregation API allows developers to generate aggregate data reports
-with data from the [Protected Audience API](/docs/privacy-sandbox/fledge/) and
+with data from the [Protected Audience API](/docs/privacy-sandbox/protected-audience/) and
 cross-site data from [Shared Storage](/docs/privacy-sandbox/shared-storage/). 
 
 This API currently provides one operation, `sendHistogramReport()`, but more may be
@@ -56,9 +58,7 @@ Attribution Reporting associates data gathered from an impression event and a co
 
 ## Test this API
 
-The API is available in the [Privacy Sandbox unified origin trial](/docs/privacy-sandbox/unified-origin-trial/) on Chrome Canary and Dev M107 or later. Learn how you can register for a [third-party origin trial](/docs/web-platform/third-party-origin-trials/).
-
-The Private Aggregation API can also be locally tested by enabling
+The Private Aggregation API can be tested locally by enabling
 the Privacy Sandbox Ads APIs experiment flag at
 `chrome://flags/#privacy-sandbox-ads-apis`.
 
@@ -78,7 +78,7 @@ A demo of Private Aggregation API for the Protected Audience API will be publish
 
 ## Use cases
 
-Private Aggregation is a general purpose API for cross-site measurement, and it’s available to be used in [Shared Storage](/docs/privacy-sandbox/shared-storage/) and [Protected Audience API](/docs/privacy-sandbox/fledge/) worklets. The first step is to decide specifically what information you want to collect. Those data points are the basis of your aggregation keys.
+Private Aggregation is a general purpose API for cross-site measurement, and it’s available to be used in [Shared Storage](/docs/privacy-sandbox/shared-storage/) and [Protected Audience API](/docs/privacy-sandbox/protected-audience/) worklets. The first step is to decide specifically what information you want to collect. Those data points are the basis of your aggregation keys.
 
 ### With Shared storage
 
@@ -110,7 +110,7 @@ From a Protected Audience API worklet, you can aggregate your data directly usin
 
 ## Available functions
 
-The following functions are available in the `privateAggregation` object available in Shared Storage and Protected Audience API worklets. To learn how to run your code in a worklet, refer to the [Shared Storage code samples](/docs/privacy-sandbox/use-shared-storage/). 
+The following functions are available in the `privateAggregation` object available in Shared Storage and Protected Audience API worklets.
 
 ### contributeToHistogram()
 
@@ -231,8 +231,8 @@ To learn more, see the [report verification explainer](https://github.com/patcg-
 
 ## Engage and share feedback
 
-The Private Aggregation API proposal is under active discussion and subject to change in the future. If you try this API and have feedback, we'd love to hear it.
+The Private Aggregation API is under active discussion and subject to change in the future. If you try this API and have feedback, we'd love to hear it.
 
-*  **GitHub**: Read the [proposal](https://github.com/patcg-individual-drafts/private-aggregation-api), [raise questions and participate in discussion](https://github.com/patcg-individual-drafts/private-aggregation-api/issues).
+*  **GitHub**: Read the [explainer](https://github.com/patcg-individual-drafts/private-aggregation-api), [raise questions and participate in discussion](https://github.com/patcg-individual-drafts/private-aggregation-api/issues).
 *  **Developer support**: Ask questions and join discussions on the [Privacy Sandbox Developer Support repo](https://github.com/GoogleChromeLabs/privacy-sandbox-dev-support).
 *  Join the [Shared Storage API group](https://groups.google.com/a/chromium.org/g/shared-storage-api-announcements) and the [Protected Audience API group](https://groups.google.com/a/chromium.org/g/fledge-api-announce/) for the latest announcements related to Private Aggregation. 

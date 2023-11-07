@@ -7,7 +7,7 @@ description: >
   More in-depth information about the topics themselves and how they are chosen.
   
 date: 2022-01-25
-updated: 2023-06-26
+updated: 2023-08-29
 authors:
   - samdutton
 ---
@@ -69,9 +69,11 @@ caller must observe and request topics from the same origin.
 
 A caller can access topics via the JavaScript API from [within an iframe](/docs/privacy-sandbox/topics/integration-guide/#implement-with-javascript-and-iframes) using `document.browsingTopics()`.
 
-A caller can also access topics from the [`Sec-Browsing-Topics` header](docs/privacy-sandbox/topics/integration-guide/#implement-with-http-headers) of a `fetch()` request, or of an iframe request. XHR requests are also enabled during origin trials (only), but this method is not recommended.
+A caller can also access topics from the [`Sec-Browsing-Topics` header](docs/privacy-sandbox/topics/integration-guide/#implement-with-http-headers) of a `fetch()` request, or of an iframe request. XHR requests were  enabled during the now-completed origin trials (only).
 
 {% endAside %}
+
+Topics returned for a user are recalculated for a caller depending on the top-level site. For example, if `adtech.example` requests the user's topics on `news-a.example`, then on `news-b.example`, and then on `news-c.example`, topics returned to them will be recalculated on each site. This means a caller is likely to get different topics for a user on different top-level sites, since the (maximum) three topics returned for a user are chosen at random from the top five for the past three [epochs](/docs/privacy-sandbox/topics/overview/#epoch) (with a 5% chance of getting a random topic). That makes it harder for a caller to identify a user by their topics, since these are likely to be different across different top-level sites (even for the same user, caller, and epoch).
 
 ## The classifier model {: #classifier-model}
 
@@ -106,7 +108,7 @@ A full [taxonomy of topics with IDs](https://github.com/patcg-individual-drafts/
 
 ### Providing feedback or input on the classifier model
 
-There are [several channels](/docs/privacy-sandbox/feedback/) for providing feedback on the Topics proposal. For feedback on the classifier model, we recommend [submitting a GitHub issue](https://github.com/patcg-individual-drafts/topics/issues) or replying to an existing issue. For example:
+There are [several channels](/docs/privacy-sandbox/feedback/) for providing feedback on the Topics API. For feedback on the classifier model, we recommend [submitting a GitHub issue](https://github.com/patcg-individual-drafts/topics/issues) or replying to an existing issue. For example:
 
 - [What topics taxonomy should be used long term?](https://github.com/patcg-individual-drafts/topics/issues/3)
 - [What if a site disagrees with the topics assigned?](https://github.com/patcg-individual-drafts/topics/issues/2)
@@ -165,7 +167,7 @@ The table below outlines an example (though unrealistically small) of a hypothet
   </tbody>
 </table>
 
-At the end of the epoch (currently proposed to be one week) the Topics API generates the browser's top topics for the week.
+At the end of the epoch (currently one week) the Topics API generates the browser's top topics for the week.
 
 - adtech1.example is now eligible to receive the "Fitness" and "Crafts" topics, since it observed them on yoga.example and also on knitting.example.
 - adtech1.example is not eligible to receive the "Travel &amp; Transportation" topic for this user as it is not present on any sites the user visited recently that are associated with that topic.
