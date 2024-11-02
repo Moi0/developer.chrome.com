@@ -15,6 +15,17 @@ tags:
 
 Check this page often to learn about changes to Chrome extensions, extensions documentation, or related policy or other changes. You'll find other notices posted on the [Extensions Google Group](https://groups.google.com/a/chromium.org/g/chromium-extensions). The [Extensions News](/tags/extensions-news/) tag lists articles about some of the topics listed here. (It even has [an RSS feed](/feeds/extensions-news.xml).) The [Chrome schedule](https://chromiumdash.appspot.com/schedule) lists stable and beta release dates.
 
+
+### Blog post: Resuming the transition to Manifest V3 {: #blog-mv2-timeline-restart }
+<p class="color-secondary-text type--caption">Posted on <time>November 16, 2023</time></p>
+
+The Manifest V2 support timeline has been updated. See our [November 2023 blog post](/blog/resuming-the-transition-to-mv3/) for details.
+
+### Blog post: Improvements to content filtering support in Manifest V3 {: #blog-content=filtering-improvements }
+<p class="color-secondary-text type--caption">Posted on <time>November 15, 2023</time></p>
+
+Learn about how we improved the declarativeNetRequest API in our [new blog post](/blog/improvements-to-content-filtering-in-manifest-v3/).
+
 ### Blog post: What's new in Chrome 120 for Extensions {: #blog-whats-new-extensions-chrome-120 }
 
 <p class="color-secondary-text type--caption">Posted on <time>November 6, 2023</time></p>
@@ -265,7 +276,7 @@ From Chrome 112, the quota for the [`storage.session`](/docs/extensions/referenc
 
 Offscreen documents are now available in Manifest V3 extensions. These help with the transition from background pages to extension service workers by providing support for DOM-related features and APIs. For more information, [read the blog post](/blog/Offscreen-Documents-in-Manifest-v3/).
 
-### Chrome 109: Is an extension enabled {: #m110-action }
+### Chrome 110: Is an extension enabled {: #m110-action }
 
 <p class="color-secondary-text type--caption">Posted on <time>January 12, 2023</time></p>
 
@@ -285,7 +296,7 @@ Previously, an extension service worker would frequently shut down at the five m
 
 The Manifest V2 deprecation timelines are under review and the experiments scheduled for early 2023 are being postponed. For more information, [read the update](https://groups.google.com/u/1/a/chromium.org/g/chromium-extensions/c/zQ77HkGmK9E) in the chromium-extensions Google Group.
 
-### Chrome 108: Setting badge colors {: #m110-badge-color }
+### Chrome 110: Setting badge colors {: #m110-badge-color }
 
 <p class="color-secondary-text type--caption">Posted on <time>November 29, 2022</time></p>
 
@@ -407,6 +418,12 @@ dependencies on DOM capabilities.
 
 Manifest V3 extensions can now include `wasm-unsafe-eval` in their `content_security_policy`
 declarations. This change allows Manifest V3 extensions to use WebAssembly.
+
+### Chrome 102: New storage.session API {: #m102-storage-session }
+
+<p class="color-secondary-text type--caption">Posted on <time>March 22, 2022</time></p>
+
+Manifest V3 extensions can now use in memory storage [storage.session](/docs/extensions/reference/storage/#property-session) .
 
 ### Docs update: Chrome Web Store item discovery {: #cws-discovery-doc }
 
